@@ -1,12 +1,14 @@
 import React from "react";
 
-const Free_games_card = () => {
+const Free_games_card = (props) => {
   return (
     <div className="card">
-      <div className="image"></div>
+      <div className="image">
+        <img src={props.image}></img>
+      </div>
       <div className="details">
-        <h1 className="title">Game Title</h1>
-        <p className="description">Game Description</p>
+        <h1 className="title">{props.title}</h1>
+        <p className="description">{props.description}</p>
       </div>
     </div>
   );

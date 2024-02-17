@@ -1,40 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Content_div_hero_button from "./UI/content_div_hero_button";
 import add_btn from "../Assets/Images/elements/add.png";
 
-const Content_div_hero = () => {
+const Content_div_hero = ({ card }) => {
+  const [selectedCard, setSelectedCard] = useState(card[0]); // default to the first card
+
+  const handleButtonClick = (card) => {
+    setSelectedCard(card);
+  };
+
   return (
     <div className="content_div_hero">
       <div className="left">
-        <img src="https://cdn.mos.cms.futurecdn.net/JvykCCUpt7pgRVDAq4ymTQ.jpg"></img>
-        <div className="content">
-          <img
-            className="title-logo"
-            src="https://i0.wp.com/lev3lup.be/wp-content/uploads/2023/08/Logo_HW3_Black.png?fit=3000%2C3000&ssl=1"
-          ></img>
-          <span className="status">Out Now</span>
-          <p className="description">
-            Dash Into Stylish And thrilling Adventure where each choice has its
-            own outcomes.
-          </p>
-          <div className="purchase-div">
-            <span className="price">Starting At ₹999</span>
-            <div className="buttons">
-              <button className="buy-btn">Buy Now</button>
-              <button className="wishlist-btn">
-                <img src={add_btn}></img>Add To Wishlist
-              </button>
+        <TransitionGroup>
+          <CSSTransition
+            key={selectedCard.title}
+            timeout={500}
+            classNames="fade"
+          >
+            <img
+              className="background-image"
+              src={selectedCard.poster_image}
+            ></img>
+          </CSSTransition>
+          <CSSTransition
+            key={selectedCard.title + "content"}
+            timeout={500}
+            classNames="slide"
+          >
+            <div className="content">
+              <img className="title-logo" src={selectedCard.logo}></img>
+              <span className="status">{selectedCard.status}</span>
+              <p className="description">{selectedCard.description}</p>
+              <div className="purchase-div">
+                <span className="price">{selectedCard.price}</span>
+                <div className="buttons">
+                  <button className="buy-btn">Buy Now</button>
+                  <button className="wishlist-btn">
+                    <img src={add_btn}></img>Add To Wishlist
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
       <div className="right">
-        <Content_div_hero_button />
-        <Content_div_hero_button />
-        <Content_div_hero_button />
-        <Content_div_hero_button />
-        <Content_div_hero_button />
-        <Content_div_hero_button />
+        {card.map((card, i) => (
+          <Content_div_hero_button
+            key={i}
+            title={card.title}
+            image={card.image}
+            onClick={() => handleButtonClick(card)}
+          />
+        ))}
       </div>
     </div>
   );

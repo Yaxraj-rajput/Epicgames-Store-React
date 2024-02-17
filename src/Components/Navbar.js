@@ -1,4 +1,5 @@
 import React from "react";
+import Devider from "./UI/Devider";
 
 const Navbar = () => {
   return (
@@ -40,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="devider"></div>
+        <Devider />
 
         <div className="buttons">
           <button>

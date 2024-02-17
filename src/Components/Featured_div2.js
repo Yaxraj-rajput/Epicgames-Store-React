@@ -1,26 +1,21 @@
 import React from "react";
 import Featured_div2_card from "./UI/Featured_div2_card";
 
-const Featured_div2 = () => {
+const Featured_div2 = ({ card }) => {
   return (
     <div className="Featured_div2">
       <div className="cards">
-        <Featured_div2_card
-          title="MORDHAU - Gold Edition"
-          discount="66"
-          price_before="2329"
-          price="791.00"
-        />
-        <Featured_div2_card
-          title="MORDHAU - Gold Edition"
-          discount="66"
-          price_before="2329"
-          price="791.00"
-        />
-        <Featured_div2_card
-          title="Check out all the deals for this week."
-          Link="Browse"
-        />
+        {card.map((card, i) => (
+          <Featured_div2_card
+            key={i}
+            title={card.title}
+            discount={card.discount}
+            price_before={card.price_before}
+            price={card.price}
+            Link={card.Link}
+            image={card.image}
+          />
+        ))}
       </div>
     </div>
   );

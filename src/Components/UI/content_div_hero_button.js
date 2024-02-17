@@ -1,15 +1,14 @@
 import React from "react";
 
-const content_div_hero_button = () => {
+const content_div_hero_button = (props) => {
   return (
-    <a href="#">
+    <a href="#" onClick={props.onClick}>
       <div className="button">
         <div className="image">
-          {" "}
-          <img src="https://4kwallpapers.com/images/wallpapers/prince-of-persia-2560x2560-11857.jpg"></img>
+          <img src={props.image} alt={props.title} />
         </div>
-        Prince Of Persia: Lost Crown
-      </div>{" "}
+        {props.title}
+      </div>
     </a>
   );
 };

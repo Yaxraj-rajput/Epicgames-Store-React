@@ -4,6 +4,7 @@ const Featured_div2_card = (props) => {
   return (
     <div className="card">
       <div className="card-img">
+        <img src={props.image}></img>
         {props.Link === "Browse" ? (
           ""
         ) : (

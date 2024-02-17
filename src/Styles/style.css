@@ -9,6 +9,13 @@ body {
   background-color: #131213;
 }
 
+.devider {
+  width: 1px;
+  min-height: 2rem;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+
 .home-container {
   width: 100%;
   height: 100vh;
@@ -205,11 +212,6 @@ body {
   background-color: rgb(255, 255, 255);
   color: black;
 }
-.home-container .content-div-main .navbar .right .devider {
-  width: 1px;
-  height: 2rem;
-  background-color: rgba(255, 255, 255, 0.1176470588);
-}
 .home-container .content-div-main .navbar .right .buttons {
   display: flex;
   justify-content: flex-start;
@@ -255,14 +257,15 @@ body {
   height: 100%;
   background-color: rgb(43, 40, 40);
   border-radius: 1rem;
-  position: relative;
   overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
-.home-container .content_div .content_div_hero .left img {
+.home-container .content_div .content_div_hero .left .background-image {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -275,15 +278,17 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  position: relative;
+  position: absolute;
   padding: 3rem;
   gap: 1rem;
+  bottom: 0;
 }
 .home-container .content_div .content_div_hero .left .content .title-logo {
   height: 10rem;
   width: 10rem;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: relative;
-  filter: invert(1);
 }
 .home-container .content_div .content_div_hero .left .content .status {
   color: #fff;
@@ -348,6 +353,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
+  overflow: hidden;
   gap: 0.1rem;
   padding: 0rem 1rem;
   padding-right: 0rem;
@@ -357,9 +363,9 @@ body {
   text-decoration: none;
   font-weight: 500;
 }
-.home-container .content_div .content_div_hero .right .button {
-  width: 100%;
+.home-container .content_div .content_div_hero .right a .button {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -368,19 +374,25 @@ body {
   text-wrap: wrap;
   border-radius: 1rem;
 }
-.home-container .content_div .content_div_hero .right .button:hover {
+.home-container .content_div .content_div_hero .right a .button:hover {
   background-color: rgba(255, 255, 255, 0.0941176471);
 }
-.home-container .content_div .content_div_hero .right .button .image {
-  width: 4.2rem;
-  height: 100%;
+.home-container .content_div .content_div_hero .right a .button .image {
   overflow: hidden;
   border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.1176470588);
+  background-color: rgba(170, 46, 46, 0.1176470588);
+  height: 100%;
+  width: 4rem;
+  position: relative;
+  display: grid;
+  place-items: center;
 }
-.home-container .content_div .content_div_hero .right .button .image img {
+.home-container .content_div .content_div_hero .right a .button .image img {
+  position: absolute;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Featured_div1 {
@@ -458,7 +470,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 25rem;
+  height: 26rem;
 }
 .Featured_div2 .cards {
   width: 100%;
@@ -503,11 +515,15 @@ body {
      object-fit: cover;
 }
 .Featured_div2 .cards .card .card-title {
+  display: block;
   padding: 1rem;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 1rem;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .Featured_div2 .cards .card .link {
   padding: 1rem;
@@ -641,14 +657,15 @@ body {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 600;
-  border: 1px solid #0175e4;
+  border: 1px solid rgba(255, 255, 255, 0.6352941176);
+  cursor: pointer;
 }
 .topbar button.view-all-btn {
   background-color: #fff;
   color: #131213;
 }
 .topbar button:hover {
-  background-color: rgba(255, 255, 255, 0.0470588235);
+  background-color: rgba(255, 255, 255, 0.1647058824);
 }
 
 .topbar2 {
@@ -699,4 +716,107 @@ body {
 }
 .topbar2 .navigation-btn button:hover {
   background-color: rgba(255, 255, 255, 0.1450980392);
+}
+
+.Featured_div3 {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.Featured_div3 .Featured_div3_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.Featured_div3 .Featured_div3_section .cards {
+  margin-top: -0.6rem;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
+}
+.Featured_div3 .Featured_div3_section .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.7rem;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  justify-content: flex-start;
+}
+.Featured_div3 .Featured_div3_section .card:hover {
+  background-color: #2a2a2a;
+}
+.Featured_div3 .Featured_div3_section .card .image {
+  height: 100%;
+  aspect-ratio: 3/2.6;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.1176470588);
+}
+.Featured_div3 .Featured_div3_section .card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Featured_div3 .Featured_div3_section .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-left: 2rem;
+  justify-content: center;
+}
+.Featured_div3 .Featured_div3_section .card .details .title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.Featured_div3 .Featured_div3_section .card .details .price {
+  color: rgba(255, 255, 255, 0.7411764706);
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms;
 }/*# sourceMappingURL=style.css.map */
