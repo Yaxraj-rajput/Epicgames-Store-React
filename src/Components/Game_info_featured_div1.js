@@ -11,6 +11,7 @@ const Game_info_featured_div = () => {
   const style = {
     height: isExpanded ? "auto" : "23rem",
     overflow: isExpanded ? "visible" : "hidden",
+    filter: isExpanded ? "brightness(1)" : "brightness(0.7)",
   };
 
   return (
@@ -63,11 +64,11 @@ const Game_info_featured_div = () => {
         >
           {isExpanded ? (
             <>
-              SHOW LESS<i className="fa-solid fa-angle-up"></i>
+              SHOW LESS <i className="fa-solid fa-angle-up"></i>
             </>
           ) : (
             <>
-              SHOW MORE<i className="fa-solid fa-angle-down"></i>
+              SHOW MORE <i className="fa-solid fa-angle-down"></i>
             </>
           )}{" "}
         </button>

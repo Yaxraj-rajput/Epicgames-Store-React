@@ -1110,6 +1110,7 @@ body {
   gap: 1.6rem;
   height: 23rem;
   position: relative;
+  transition: all 0.25s ease;
 }
 .Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div .main-container .content img {
   width: 100%;

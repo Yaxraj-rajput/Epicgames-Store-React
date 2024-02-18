@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <button className="back-btn">
-          <i class="fa-solid fa-angle-left"></i>
+          <i className="fa-solid fa-angle-left"></i>
         </button>
         <div className="search-bar">
           <i className="fa-solid fa-search"></i>
@@ -16,17 +16,17 @@ const Navbar = () => {
         <div className="links">
           <ul>
             <li>
-              <NavLink activeClassName="active" to="/">
+              <NavLink activeclassname="active" to="/">
                 Discover
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="active" to="/browse">
+              <NavLink activeclassname="active" to="/browse">
                 Browse
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="active" to="/news">
+              <NavLink activeclassname="active" to="/news">
                 News
               </NavLink>
             </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <div className="buttons">
           <button>
-            <i class="fa-solid fa-user-group"></i>
+            <i className="fa-solid fa-user-group"></i>
             <span>1</span>
           </button>
           <button className="login-btn">U</button>

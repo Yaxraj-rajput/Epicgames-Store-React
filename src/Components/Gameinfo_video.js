@@ -15,9 +15,9 @@ const Gameinfo_video = () => {
         </div>
         <iframe
           src="https://player.vimeo.com/video/734629970?h=64b994b25b&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="slider">
