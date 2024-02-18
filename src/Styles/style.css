@@ -110,7 +110,6 @@ body {
   gap: 1rem;
 }
 .main-container .content-div-main .navbar .left .back-btn {
-  background-color: red;
   padding: 0.5rem;
   display: flex;
   border: none;
@@ -868,51 +867,39 @@ body {
   height: 50rem;
   gap: 1rem;
 }
-.Gameinfo_div_main .Gameinfo_div .top {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.Gameinfo_div_main .Gameinfo_div .top .left {
-  width: 74%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar {
   width: 100%;
   padding: 1rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .title {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .title {
   font-size: 3rem;
   font-weight: lighter;
   color: #fff;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .rating {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .rating {
   height: 2rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .rating .stars {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .rating .stars {
   display: flex;
   gap: 0rem;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .rating .stars img {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .rating .stars img {
   width: 1rem;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .rating .number {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .rating .number {
   color: rgba(255, 255, 255, 0.568627451);
   font-size: 0.95rem;
   background-color: rgba(255, 255, 255, 0.082);
@@ -921,14 +908,27 @@ body {
   font-weight: 600;
   letter-spacing: 1.5px;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .highlight {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .highlight {
   display: flex;
   align-items: center;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_title_bar .description .highlight span {
+.Gameinfo_div_main .Gameinfo_div .Gameinfo_title_bar .description .highlight span {
   color: rgba(255, 255, 255, 0.8784313725);
   font-size: 1rem;
   font-weight: 500;
+}
+.Gameinfo_div_main .Gameinfo_div .top {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  position: relative;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left {
+  width: 74%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 .Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main {
   height: 75vh;
@@ -961,37 +961,37 @@ body {
 .Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls:hover {
   width: 100%;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .left,
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .right {
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-left,
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-right {
   width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .left img,
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .right img {
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-left img,
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-right img {
   width: 1.5rem;
   height: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .left {
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-left {
   background: rgb(105, 89, 254);
   background: linear-gradient(270deg, rgba(105, 89, 254, 0) 0%, rgba(0, 0, 0, 0.6923144258) 100%);
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .right {
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-right {
   background: rgb(105, 89, 254);
   background: linear-gradient(90deg, rgba(105, 89, 254, 0) 0%, rgba(0, 0, 0, 0.6923144258) 100%);
 }
-.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .right img {
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video .controls .arrow-right img {
   transform: rotate(180deg);
 }
 .Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .Gameinfo_video iframe {
-  width: 105%;
-  height: 105%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  pointer-events: none;
 }
 .Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .slider {
   width: 100%;
@@ -1008,13 +1008,13 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1176470588);
   cursor: pointer;
   transition: all 0.25s ease;
 }
 .Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_video_main .slider .slide img {
-  width: 2rem;
-  height: 2rem;
+  width: 100%;
   opacity: 0.8;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1128,8 +1128,221 @@ body {
 .Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div .main-container .content ul span {
   color: rgba(255, 255, 255, 0.5764705882);
 }
-.Gameinfo_div_main .Gameinfo_div .top .right {
-  width: 26%;
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card {
+  width: 100%;
+  height: 16rem;
+  background-color: #212021;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top {
+  height: 68%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .image {
   height: 100%;
+  min-width: 22rem;
+  width: 38rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .image img {
+  width: 100%;
+  height: 100%;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .content .title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .content .title .type {
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  background-color: #363637;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .top .content .description {
+  color: rgba(255, 255, 255, 0.568627451);
+  font-size: 1rem;
+  display: -webkit-box;
+  font-weight: 400;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .bottom {
+  height: 32%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.0745098039);
+  padding-right: 2rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .bottom .price {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .bottom button {
+  border: 1px solid rgba(255, 255, 255, 0.6352941176);
+  padding: 1rem 2.5rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: all 0.25s ease;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Game_info_featured_div2 .Gameinfo_featureddiv2_card .bottom button:hover {
+  background-color: rgba(255, 255, 255, 0.1450980392);
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_social {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_social .social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: #212021;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_social .social-links .fab {
+  color: rgba(255, 255, 255, 0.568627451);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.Gameinfo_div_main .Gameinfo_div .top .left .Gameinfo_social .social-links .fab:hover {
+  color: #fff;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right {
   position: sticky;
+  width: 26%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  top: 5rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .logo-div {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .logo-div img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .type {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #363637;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .price {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .buy_btn {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  background-color: #0175e4;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .buy_btn:hover {
+  background-color: #0158a2;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .add_to_cart_btn {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
+  border-radius: 0.3rem;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .add_to_cart_btn:hover {
+  background-color: rgba(255, 255, 255, 0.1450980392);
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .add_to_wishlist_btn {
+  width: 100%;
+  padding: 0.2rem 0rem;
+  border: 1px solid rgba(255, 255, 255, 0.5764705882);
+  border-radius: 0.3rem;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .add_to_wishlist_btn img {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .add_to_wishlist_btn:hover {
+  background-color: rgba(255, 255, 255, 0.1450980392);
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .information .detail-card {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .information .detail-card .title {
+  color: rgba(255, 255, 255, 0.5215686275);
+}
+.Gameinfo_div_main .Gameinfo_div .top .right .details-div .information .detail-card .value {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

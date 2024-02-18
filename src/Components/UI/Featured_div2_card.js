@@ -20,8 +20,8 @@ const Featured_div2_card = (props) => {
       ) : (
         <div className="card-price">
           <span className="discount-card">-80%</span>
-          <span className="price-before">$16.99</span>
-          <span className="price">{props.price}</span>
+          <span className="price-before">₹{props.price_before}</span>
+          <span className="price">₹{props.price}</span>
         </div>
       )}
     </div>
