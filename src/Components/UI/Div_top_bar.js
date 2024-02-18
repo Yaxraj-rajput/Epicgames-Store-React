@@ -1,9 +1,9 @@
 import React from "react";
 
-const Div_top_bar = () => {
+const Div_top_bar = (props) => {
   return (
     <div className="topbar">
-      <h1 className="title">Free Games</h1>
+      <h1 className="title">{props.title}</h1>
       <button className="view-more">View More</button>
     </div>
   );

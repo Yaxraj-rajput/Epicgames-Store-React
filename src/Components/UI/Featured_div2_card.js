@@ -1,10 +1,12 @@
 import React from "react";
+import Wishlist_btn from "./Wishlist_btn";
 
 const Featured_div2_card = (props) => {
   return (
     <div className="card">
       <div className="card-img">
         <img src={props.image}></img>
+        {props.Link === "Browse" ? "" : <Wishlist_btn />}
         {props.Link === "Browse" ? (
           ""
         ) : (

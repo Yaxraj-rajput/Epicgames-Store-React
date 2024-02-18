@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./Pages/Home";
+import Main from "./Pages/main"; // Fix the file path casing
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Main />
     </div>
   );
 };

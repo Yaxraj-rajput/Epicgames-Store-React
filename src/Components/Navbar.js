@@ -1,5 +1,6 @@
 import React from "react";
 import Devider from "./UI/Devider";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -15,15 +16,19 @@ const Navbar = () => {
         <div className="links">
           <ul>
             <li>
-              <a className="active" href="#">
+              <NavLink activeClassName="active" to="/">
                 Discover
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#">Browse</a>
+              <NavLink activeClassName="active" to="/browse">
+                Browse
+              </NavLink>
             </li>
             <li>
-              <a href="#">News</a>
+              <NavLink activeClassName="active" to="/news">
+                News
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -32,10 +37,10 @@ const Navbar = () => {
         <div className="links">
           <ul>
             <li>
-              <a href="#">Wishlist</a>
+              <NavLink to="#">Wishlist</NavLink>
             </li>
             <li>
-              <a href="#">Cart</a>
+              <NavLink to="#">Cart</NavLink>
               <span className="cart-amt">2</span>
             </li>
           </ul>

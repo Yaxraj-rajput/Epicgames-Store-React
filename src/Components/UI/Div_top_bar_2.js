@@ -1,10 +1,10 @@
 import React from "react";
 
-const Div_top_bar_2 = () => {
+const Div_top_bar_2 = (props) => {
   return (
     <div className="topbar2">
       <span className="title">
-        Featured Discounts <i class="fa-solid fa-angle-right"></i>
+        {props.title} <i class="fa-solid fa-angle-right"></i>
       </span>
       <div className="navigation-btn">
         <button className="prev-btn">

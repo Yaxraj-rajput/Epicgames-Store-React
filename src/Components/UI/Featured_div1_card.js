@@ -1,11 +1,14 @@
 import React from "react";
+import Wishlist_btn from "./Wishlist_btn";
 
 const Featured_div1_card = (props) => {
   return (
     <div className="card">
       <div className="card-img">
         <img src={props.image}></img>
+        <Wishlist_btn />
       </div>
+
       <span className="type">{props.type}</span>
       <div className="card-title">{props.title}</div>
       <div className="card-price">
